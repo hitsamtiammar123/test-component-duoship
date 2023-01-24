@@ -6,6 +6,7 @@
 # Project Information
 - define props and states with type
 - data should be from props(not static). 
+- design is full page; you should use layout for header and footer. And order list as main content
 
 # What we want to evaluate:
 - how you setup the project

@@ -7,6 +7,7 @@
 - define props and states with type
 - data should be from props(not static). 
 - design is full page; you should use layout for header and footer. And order list as main content
+- use Material UI(https://mui.com)
 
 # What we want to evaluate:
 - how you setup the project

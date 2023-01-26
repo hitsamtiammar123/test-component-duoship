@@ -14,8 +14,14 @@ const GrayButton = styled(Button)({
 });
 
 const TextField = styled(BaseTextField)({
-  borderRadious: '12px',
   width: '419px',
+  background: '#F8FAFB',
+  border: 'none',
+  '& .MuiOutlinedInput-root': {
+    borderRadius: '12px',
+    height: '54px',
+    border: '1px solid #A3A3A3'
+  }
 });
 
 export default function SearchBar(){
@@ -34,7 +40,6 @@ export default function SearchBar(){
               </InputAdornment>
             ),
           }}
-        variant="outlined"
       />
       </Grid>
       <Grid item container alignItems="center" justifyContent="space-between" xs={2}>

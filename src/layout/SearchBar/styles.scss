@@ -1,6 +1,11 @@
 .search-bar{
   margin-top: 45px;
   margin-bottom: 27px;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  background: #F8FAFB;
+  width: 100%;
 
   .btn-1{
     width: 97px;

@@ -18,5 +18,9 @@ export const TextField = styled(BaseTextField)({
     borderRadius: '12px',
     height: '54px',
     border: '1px solid #A3A3A3'
+  },
+  '@media screen and (max-width: 425px)': {
+    width: '100%',
+    marginBottom: '20px'
   }
 });

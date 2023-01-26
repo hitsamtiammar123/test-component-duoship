@@ -15,7 +15,7 @@ export default function Header(){
   };
 
   return (
-    <Grid container direction="row" justifyContent="space-between" className="header">
+    <Grid container direction={{ sm: 'row', xs: 'column'}} justifyContent="space-between" className="header">
       <h1>Orders</h1>
       <Grid item>
         <Grid className="right-container" justifyContent="space-between" alignItems="center" container>
@@ -35,7 +35,7 @@ export default function Header(){
             </Grid>
           </Button>
         </Grid>
-        <Grid className="create-order-container" container direction="row" justifyContent="flex-end">
+        <Grid className="create-order-container" container direction="row" justifyContent={{ sm: 'flex-end', xs: 'center'}}>
           <Button className="create-order-button text-md" color="secondary" variant="contained">
             <span className="text-md light">Create Order</span>
           </Button>

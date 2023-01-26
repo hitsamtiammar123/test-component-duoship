@@ -19,6 +19,23 @@
     .accordion-item-detail:last-of-type{
       margin-bottom: 0;
     }
+  }
 
+  @media screen and (max-width: 1024px) {
+    .accordion-detail{
+      .main-title{
+        margin-top: 21px;
+      }
+      .right-bar{
+        margin-top: 45px;
+        align-items: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: 375px){
+    .order-container{
+      margin-top: 20px;
+    }
   }
 }

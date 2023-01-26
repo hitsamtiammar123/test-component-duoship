@@ -6,7 +6,7 @@ import './styles.scss';
 
 export default function SearchBar(){
   return (
-    <Grid container className="search-bar" direction="row" justifyContent="space-between">
+    <Grid container className="search-bar" direction="row" justifyContent={ { sm: 'space-between', xs: 'center'} }>
       <Grid item>
         <TextField
           fullWidth
@@ -22,7 +22,7 @@ export default function SearchBar(){
           }}
       />
       </Grid>
-      <Grid item container alignItems="center" justifyContent="space-between" xs={2}>
+      <Grid item container alignItems={{ xs: 'center', sm: 'center' }} justifyContent={{ xs: 'center', sm: 'space-between' }} sm={2} xs={12}>
         <GrayButton className="btn-1">
           <Grid container justifyContent="space-between" direction="row">
             <span className="text-xs">Status</span>

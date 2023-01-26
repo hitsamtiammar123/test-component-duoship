@@ -10,4 +10,19 @@
   .btn-1{
     width: 97px;
   }
+
+  @media screen and (max-width: 1024px) {
+    align-items: center;
+    padding: 10px;
+    .btn-1{
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .btn-1{
+      margin-bottom: 0px;
+      margin-right: 20px;
+    }
+  }
 }

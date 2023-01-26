@@ -4,4 +4,5 @@ I made this view based on Figma you shared to me. There are some point on this v
   - I use craco to configure module aliasing
   - There are mixed on styling between scss and styled
   - I handle responsive also
+  - Searhbar is sticky
 

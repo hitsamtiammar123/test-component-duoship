@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Grid } from '@mui/material';
 import { OrderItem } from './components';
 import moment from 'moment';
@@ -70,9 +70,17 @@ const DUMMY_DATA: Array<OrderItemProps> = [
 
 
 export default function Body(){
+  const [displayList, setDisplayList] = useState<Array<boolean>>(DUMMY_DATA.map(() => false));
+
+  function onClick(event: React.SyntheticEvent, expanded: boolean, index: number){
+    const newList = [...displayList];
+    newList[index] = expanded;
+    setDisplayList(newList);
+  }
+
   return (
     <Grid container>
-        {DUMMY_DATA.map(item => <OrderItem key={item.orderId} {...item}/>)}
+        {DUMMY_DATA.map((item, index) => <OrderItem key={item.orderId} {...item} isDisplay={displayList[index]} onClick={(event, expanded) => onClick(event, expanded, index)} />)}
     </Grid>
   )
 }

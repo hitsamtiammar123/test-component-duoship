@@ -22,14 +22,19 @@ export type OrderItemProps = {
     items: Array<ItemBoughtProps>
 }
 
-export default function OrderItem(props: OrderItemProps){
-  const { orderId, orderPlaced, totalPrice, shippedTo, delivered, items } = props;
+export type OrderItemToogle = {
+  isDisplay: boolean,
+  onClick: (event: React.SyntheticEvent, expanded: boolean) => void
+}
+
+export default function OrderItem(props: OrderItemProps & OrderItemToogle){
+  const { orderId, orderPlaced, totalPrice, shippedTo, delivered, items, isDisplay, onClick } = props;
   function onLinkClicked(e: React.MouseEvent<HTMLAnchorElement>){
     e.stopPropagation();
   }
 
   return (
-    <Accordion className="accordion-item">
+    <Accordion expanded={isDisplay} onChange={onClick} className="accordion-item">
     <AccordionSummary>
       <Grid container direction="row">
         <Grid item spacing={3} container direction="row" sm xs={12}>
@@ -47,8 +52,9 @@ export default function OrderItem(props: OrderItemProps){
           </Grid>
         </Grid>
         <Grid className="order-container" item sm={3} xs={12}>
-          <Grid item container direction="row">
+          <Grid item container alignItems={{ sm:'center'}} justifyContent={{ sm: 'space-between' }} direction="row">
             <span className="text">ORDER # {orderId}</span>
+            <span className="text-lg extrabold">{isDisplay ? '-' : '+'}</span>
           </Grid>
           <Grid item container justifyContent="space-between" direction="row">
             <a onClick={onLinkClicked} href="/#order-detail" className="text-sm text-purple mt-7px">Order Detail</a>

@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import { Container } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { Header } from './layout';
+import { Header, SearchBar } from './layout';
 
 const theme = createTheme({
   palette: {
@@ -17,6 +17,7 @@ function App() {
     <ThemeProvider theme={theme}>
         <Container>
           <Header/>
+          <SearchBar />
         </Container>
     </ThemeProvider>
   );

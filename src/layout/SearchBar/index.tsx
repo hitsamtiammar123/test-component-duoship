@@ -45,13 +45,13 @@ export default function SearchBar(){
       <Grid item container alignItems="center" justifyContent="space-between" xs={2}>
         <GrayButton className="btn-1">
           <Grid container justifyContent="space-between" direction="row">
-            <span className="text-sm">Status</span>
+            <span className="text-xs">Status</span>
             <img src={ArrowDown} alt="ArrowDown" />
           </Grid>
         </GrayButton>
         <GrayButton>
           <Grid container direction="row">
-            <span className="text-sm">Sort</span>
+            <span className="text-xs">Sort</span>
             <img src={Sort} alt="Sort" />
           </Grid>
         </GrayButton>

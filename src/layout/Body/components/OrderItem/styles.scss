@@ -1,0 +1,24 @@
+.accordion-item{
+  .mt-7px{
+    margin-top: 7px; 
+  }
+
+  .accordion-detail{
+    .right-bar{
+      margin-top: 35px;
+    }
+    
+    .main-title{
+      margin-bottom: 11px;
+    }
+
+    .accordion-item-detail{
+      margin-bottom: 46px;
+    }
+
+    .accordion-item-detail:last-of-type{
+      margin-bottom: 0;
+    }
+
+  }
+}

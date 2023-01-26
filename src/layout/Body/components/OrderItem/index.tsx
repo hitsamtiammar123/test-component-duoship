@@ -52,7 +52,7 @@ export default function OrderItem(props: OrderItemProps & OrderItemToogle){
           </Grid>
         </Grid>
         <Grid className="order-container" item sm={3} xs={12}>
-          <Grid item container alignItems={{ sm:'center'}} justifyContent={{ sm: 'space-between' }} direction="row">
+          <Grid item container alignItems={{ sm:'center', xs: 'center' }} justifyContent={{ xs: 'space-between', sm: 'space-between' }} direction={{ md: 'row', sm: 'column', xs: 'row' }}>
             <span className="text">ORDER # {orderId}</span>
             <span className="text-lg extrabold">{isDisplay ? '-' : '+'}</span>
           </Grid>

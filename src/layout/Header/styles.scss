@@ -1,0 +1,26 @@
+.header{
+  margin-top: 66px;
+
+  .icon{
+    width: 26px;
+    height: 26px;
+  }
+
+  .right-container{
+    min-width: 218px;
+  }
+
+  .dropdown-button{
+    width: 100px;
+  }
+
+  .create-order-container{
+    margin-top: 28px;
+
+    .create-order-button{
+      border-radius: 12px;
+      text-transform: none;
+      width: 178px;
+    }
+  }
+}

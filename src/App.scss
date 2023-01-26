@@ -1,3 +1,45 @@
 body{
   font-family: 'Poppins', sans-serif;
+  background-color:  #F8FAFB;
+  font-weight: 500;
+}
+
+.text-purple{
+  color: #6F6AF8;
+}
+
+.text-black{
+  color: #0D0B35;
+}
+
+.text-sm{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-md{
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.text{
+  font-size: 23px;
+  line-height: 34.5px;
+}
+
+.text-lg{
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.bold{
+ font-weight: 600; 
+}
+
+.extrabold{
+  font-weight: 700;
+}
+
+.light{
+  font-weight: 400;
 }

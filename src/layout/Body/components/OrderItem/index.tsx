@@ -1,59 +1,9 @@
 import React from 'react';
-import { styled } from '@mui/material/styles';
 import moment from 'moment';
 import numbro from 'numbro';
-import { Grid, Accordion as BaseAccordion, AccordionSummary as BaseAccordionSummary, AccordionDetails as BaseAccordionDetails, Button } from '@mui/material';
+import { Accordion, AccordionDetails, AccordionSummary, RightButton, ViewItemButton} from './components';
+import { Grid } from '@mui/material';
 import './styles.scss';
-
-const Accordion = styled(BaseAccordion)({
-  borderTopLeftRadius: '15px',
-  borderTopRightRadius: '15px', 
-  '&:first-of-type': {
-    borderTopLeftRadius: '15px',
-    borderTopRightRadius: '15px', 
-  },
-  '&:before': {
-    display: 'none'
-  },
-  '&.Mui-expanded': {
-    marginBottom: '46px !important'
-  },
-  width: '100%',
-  marginBottom: '20px'
-});
-
-const AccordionSummary = styled(BaseAccordionSummary)({
-  borderTopLeftRadius: '15px',
-  borderTopRightRadius: '15px', 
-  borderTop: 'none',
-  '&:first-of-type': {
-    borderTopLeftRadius: '15px',
-    borderTopRightRadius: '15px', 
-  },
-  '&.MuiAccordionSummary-root': {
-    padding: '18px',
-    height: '108px'
-  },
-  background: 'white',
-  padding: '18px',
-});
-
-const AccordionDetails = styled(BaseAccordionDetails)({
-  background: '#F5F5F5',
-})
-
-const ViewItemButton = styled(Button)({
-  height: '36px',
-  borderRadius: '8px',
-  textTransform: 'none'
-})
-
-const RightButton = styled(Button)({
-  height: '47px',
-  borderRadius: '12px',
-  textTransform: 'none',
-  marginBottom: '23px'
-})
 
 export type ItemBoughtProps = {
   itemId: number,

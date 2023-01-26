@@ -1,28 +1,8 @@
 import React from 'react';
-import { TextField as BaseTextField, InputAdornment, Grid, Button } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import { InputAdornment, Grid } from '@mui/material';
 import { Search, Sort, ArrowDown } from 'src/svg';
+import { GrayButton, TextField} from './components';
 import './styles.scss';
-
-const GrayButton = styled(Button)({
-  backgroundColor: '#F3F3F3',
-  borderRadius: 10.7274,
-  textTransform: 'none',
-  color: 'black',
-  height: 37,
-  padding: '9px 16px'
-});
-
-const TextField = styled(BaseTextField)({
-  width: '419px',
-  background: '#F8FAFB',
-  border: 'none',
-  '& .MuiOutlinedInput-root': {
-    borderRadius: '12px',
-    height: '54px',
-    border: '1px solid #A3A3A3'
-  }
-});
 
 export default function SearchBar(){
   return (
